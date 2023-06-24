@@ -239,7 +239,7 @@ img {
 }
 
 .hero {
-  max-width: 428px;
+  width: 100%;
   background-color: var(--second-background);
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),

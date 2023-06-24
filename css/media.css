@@ -107,7 +107,7 @@
   /* Hero */
 
   .hero {
-    max-width: 768px;
+    width: 100%;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
