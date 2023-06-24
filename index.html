@@ -17,6 +17,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
     <title>Web Studio</title>
 </head>
 
@@ -39,6 +40,64 @@
                             111-11-11</a></li>
                 </ul>
             </address>
+            <button type="button" class="menu-mob-btn" data-menu-open>
+                <svg class="menu-mob-icon" width="32" height="22">
+                    <use href="./images/icons.svg#icon-heder-menu"></use>
+                </svg>
+            </button>
+        </div>
+
+        <div class="menu-mob is-hidden" data-menu> 
+            <div>
+                <button type="button" class="menu-mob-close" data-menu-close>
+                    <svg class="menu-close-icon" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close-black"></use>
+                    </svg>
+                </button>
+                <ul class="menu-mob-list list">
+                    <li><a class="menu-mob-link current link" href="./index.html">Studio</a></li>
+                    <li><a class="menu-mob-link link" href="./portfolio.html">Portfolio</a></li>
+                    <li><a class="menu-mob-link link" href="">Contacts</a></li>
+                </ul>
+            </div>
+            <div>
+                <address class="menu-mob-address">
+                    <ul class="menu-mob-address-list list">
+                        <li><a class="menu-address-link-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                        <li><a class="menu-address-link-email link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    </ul>
+                </address>
+                <ul class="menu-soc-list list">
+                    <li class="menu-soc-item">
+                        <a class="menu-soc-link link" href="" target="_blank" rel="noopener noreferrer">
+                            <svg class="menu-soc-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="menu-soc-item">
+                        <a class="menu-soc-link link" href="" target="_blank" rel="noopener noreferrer">
+                            <svg class="menu-soc-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="menu-soc-item">
+                        <a class="menu-soc-link link" href="" target="_blank" rel="noopener noreferrer">
+                            <svg class="menu-soc-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="menu-soc-item">
+                        <a class="menu-soc-link link" href="" target="_blank" rel="noopener noreferrer">
+                            <svg class="menu-soc-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
 
@@ -57,7 +116,7 @@
             <div class="container feature-container">
                 <h2 class="feature-header visually-hidden">Feature</h2>
                 <ul class="feature-list list">
-                    <!-- Feature 1 -->
+
                     <li class="feature-item">
                         <div class="feature-box">
                             <svg class="feature-icon" width="64" height="64">
@@ -70,7 +129,7 @@
                             and creative solution.
                         </p>
                     </li>
-                    <!-- Feature 2 -->
+
                     <li class="feature-item">
                         <div class="feature-box">
                             <svg class="feature-icon" width="64" height="64">
@@ -83,7 +142,7 @@
                             shortest possible
                             time.</p>
                     </li>
-                    <!-- Feature 3 -->
+
                     <li class="feature-item">
                         <div class="feature-box">
                             <svg class="feature-icon" width="64" height="64">
@@ -95,7 +154,7 @@
                             opportunities and minimize
                             risk.</p>
                     </li>
-                    <!-- Feature 4 -->
+
                     <li class="feature-item">
                         <div class="feature-box">
                             <svg class="feature-icon" width="64" height="64">
@@ -116,12 +175,18 @@
             <div class="container services-container">
                 <h2 class="services-title">What are we doing</h2>
                 <ul class="services-list list">
-                    <li class="services-item"><img src="./images/design1.jpg" alt="Design of sites on PC" width="360"
-                            height="300"></li>
-                    <li class="services-item"><img src="./images/design2.jpg" alt="Design of messengers" width="360"
-                            height="300"></li>
-                    <li class="services-item"><img src="./images/design3.jpg" alt="Design of sites on mobile"
-                            width="360" height="300"></li>
+                    <li class="services-item">
+                        <img srcset="./images/design1-2x.jpg 2x" src="./images/design1.jpg" alt="Design of sites on PC"
+                            width="360" height="300">
+                    </li>
+                    <li class="services-item">
+                        <img srcset="./images/design2-2x.jpg 2x" src="./images/design2.jpg" alt="Design of messengers"
+                            width="360" height="300">
+                    </li>
+                    <li class="services-item">
+                        <img srcset="./images/design3-2x.jpg 2x" src="./images/design3.jpg"
+                            alt="Design of sites on mobile" width="360" height="300">
+                    </li>
                 </ul>
             </div>
         </section>
@@ -132,7 +197,8 @@
                 <h2 class="team-title">Our Team</h2>
                 <ul class="team-list list">
                     <li class="team-list-item">
-                        <img src="./images/mark.jpg" alt="Photo Mark" width="264" height="260">
+                        <img srcset="./images/mark-2x.jpg 2x" src="./images/mark.jpg" alt="Photo Mark" width="264"
+                            height="260">
                         <div class="team-description">
                             <h3 class="team-item-name">Mark Guerrero</h3>
                             <p class="team-item-text">Product Designer</p>
@@ -169,7 +235,8 @@
                         </div>
                     </li>
                     <li class="team-list-item">
-                        <img src="./images/tom.jpg" alt="Photo Tom" width="264" height="260">
+                        <img srcset="./images/tom-2x.jpg 2x" src="./images/tom.jpg" alt="Photo Tom" width="264"
+                            height="260">
                         <div class="team-description">
                             <h3 class="team-item-name">Tom Ford</h3>
                             <p class="team-item-text">Frontend Developer</p>
@@ -206,7 +273,8 @@
                         </div>
                     </li>
                     <li class="team-list-item">
-                        <img src="./images/camila.jpg" alt="Photo Camila" width="264" height="260">
+                        <img srcset="./images/camila-2x.jpg 2x" src="./images/camila.jpg" alt="Photo Camila" width="264"
+                            height="260">
                         <div class="team-description">
                             <h3 class="team-item-name">Camila Garcia</h3>
                             <p class="team-item-text">Marketing</p>
@@ -243,7 +311,8 @@
                         </div>
                     </li>
                     <li class="team-list-item">
-                        <img src="./images/daniel.jpg" alt="Photo Daniel" width="264" height="260">
+                        <img srcset="./images/daniel-2x.jpg 2x" src="./images/daniel.jpg" alt="Photo Daniel" width="264"
+                            height="260">
                         <div class="team-description">
                             <h3 class="team-item-name">Daniel Wilson</h3>
                             <p class="team-item-text">UI Designer</p>
@@ -381,14 +450,15 @@
             <div class="container-form">
                 <p class="form-title">Subscribe</p>
                 <form class="footer-form">
-                    <label class="footer-form-label">
-                        <input type="email" name="form-email" class="footer-form-input" placeholder="E-mail">
-                    </label>
-                    <button type="submit" class="btn-subscribe">Subscribe
-                        <svg class="form-email-icon" width="24" height="24">
-                            <use href="./images/icons.svg#icon-subscribe"></use>
-                        </svg>
-                    </button>
+                    <label for="email-footer" class="footer-form-label">
+                        <input id="email-footer" type="email" name="form-email" class="footer-form-input"
+                            placeholder="E-mail">
+
+                        <button type="submit" class="btn-subscribe">Subscribe
+                            <svg class="form-email-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-subscribe"></use>
+                            </svg>
+                        </button>
                 </form>
             </div>
         </div>
@@ -452,6 +522,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
