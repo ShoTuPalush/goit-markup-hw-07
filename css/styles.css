@@ -28,6 +28,8 @@ ul {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .list {
@@ -650,15 +652,16 @@ img {
 /** PROJECT */
 
 .project {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 .filter-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 24px;
-  margin-bottom: 72px;
+  gap: 16px 24px;
+  margin-bottom: 48px;
 }
 
 .filter-btn {
@@ -688,12 +691,6 @@ img {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.project-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 48px 24px;
-}
-
 .project-link {
   display: block;
   transition-property: box-shadow;
@@ -702,8 +699,16 @@ img {
 }
 
 .project-item {
-  width: calc((100% - 48px) / 3);
+  width: 100%;
+  max-width: 396px;
 }
+
+@media screen and (max-width:767px) {
+  .project-item:not(:last-child){
+    margin-bottom: 48px;
+  }
+}
+
 
 .card-description {
   padding: 32px 16px;

@@ -225,6 +225,27 @@
     display: inline-flex;
     margin: 0;
   }
+
+  /* Project */
+
+  .project {
+    padding-top: 96px;
+    padding-bottom: 64px;
+  }
+
+  .filter-list{
+    margin-bottom: 64px;
+  }
+
+  .project-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+
+  .project-item{
+    width: calc((100% - 24px) / 2);
+  }
 }
 
 /* Desktop */
@@ -371,5 +392,26 @@
 
   .footer-container {
     justify-content: space-between;
+  }
+
+  /* Project */
+
+  .project {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+
+  .filter-list{
+    margin-bottom: 72px;
+  }
+
+  .project-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+  }
+
+  .project-item{
+    width: calc((100% - 48px) / 3);
   }
 }
